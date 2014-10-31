@@ -1,16 +1,3 @@
-/*
-* jQuery Simply Countable plugin
-* Provides a character counter for any text input or textarea
-* 
-* @version  0.4.2
-* @homepage http://github.com/aaronrussell/jquery-simply-countable/
-* @author   Aaron Russell (http://www.aaronrussell.co.uk)
-*
-* Copyright (c) 2009-2010 Aaron Russell (aaron@gc4.co.uk)
-* Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
-* and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
-*/
-
 (function($){
 
   $.fn.simplyCountable = function(options){
@@ -54,7 +41,6 @@
           var prefix = '';
           if (options.thousandSeparator){
             ct = ct.toString();          
-            // Handle large negative numbers
             if (ct.match(/^-/)) { 
               ct = ct.substr(1);
               prefix = '-';
